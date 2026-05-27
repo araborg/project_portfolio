@@ -7,7 +7,7 @@ interface Data {
 	level: string;
 }
 
-const data: Data = [
+const data: Data[] = [
 	{ skill: "HRML+CSS", emoji: "✅", color: "blue", level: "beginner" },
 
 	{

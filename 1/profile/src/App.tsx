@@ -1,4 +1,5 @@
 import "./App.css";
+import Avatar from "./Avatar";
 
 interface Data {
 	skill: string;
@@ -38,6 +39,8 @@ function App() {
 	return (
 		<>
 			<p>Welcome</p>
+
+			<Avatar />
 		</>
 	);
 }

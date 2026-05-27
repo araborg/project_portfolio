@@ -1,4 +1,10 @@
-function Skill({ skill: string, emoji: string, color: string }): string {
+interface SkillProps {
+	skill: string;
+	emoji: string;
+	color: string;
+}
+
+function Skill({ skill, emoji, color }: SkillProps) {
 	return (
 		<div className="skill" style={{ backgroundColor: color }}>
 			<span>{skill}</span>

@@ -7,7 +7,13 @@ function SkillList() {
 	return (
 		<div className="skill-list">
 			{dataArr.map(({ skill, emoji, color }) => (
-				<Skill skill={skill} emoji={emoji} color={color} key={skill} />
+				<Skill
+					skill={skill}
+					emoji={emoji}
+					color={color}
+					//
+					key={skill}
+				/>
 			))}
 		</div>
 	);

@@ -4,6 +4,7 @@ interface ImageProps {
 	className: string;
 }
 
+// An image Component
 function Image({ src }: ImageProps) {
 	return <img src={src} />;
 }

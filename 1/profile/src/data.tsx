@@ -30,3 +30,21 @@ const data: Data[] = [
 ];
 
 export default data;
+
+/*
+interface ObjProp {
+	skill: string;
+	emoji: string;
+	color: string;
+	level: string;
+}
+
+const obj: ObjProp = {
+	skill: "Web Design",
+	emoji: "✅",
+	color: "lightgreen",
+	level: "beginner",
+};
+
+console.log(obj);
+*/

@@ -8,12 +8,13 @@
 
 body {
 	font-family: "IBM Plex Mono", sans-serif;
+	font-size: 1rem;
 }
 
 .card {
 	margin: 2rem auto;
-	width: 100%;
-	max-width: 400px;
+	/* width: 100%; */
+	max-width: 420px;
 	padding: 0.8rem;
 }
 
@@ -25,12 +26,7 @@ body {
 
 .main {
 	display: flex;
-	/* flex-direction: column; */
 	flex-wrap: wrap;
-	/* justify-content: space-between; */
-	/* width: 100%; */
-	border: 1px solid red;
-
 	padding: 0.8rem 1.2rem;
 }
 
@@ -41,17 +37,15 @@ h1 {
 
 .skill-list {
 	display: flex;
-	/* flex-direction: column; */
 	flex-wrap: wrap;
 	margin: 0.8rem 0;
 }
 
 .skill {
 	margin: 0.4rem 0.4rem 0;
-	padding: 0.2rem;
+	padding: 0.2rem 0.64rem;
 	border-radius: 5px;
 	cursor: pointer;
-	/* width: inherit; */
 }
 
 .skill span:first-child {

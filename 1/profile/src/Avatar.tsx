@@ -1,7 +1,7 @@
 interface ImageProps {
 	src: string;
-	alt: string;
-	className: string;
+	alt?: string;
+	className?: string;
 }
 
 // An image Component

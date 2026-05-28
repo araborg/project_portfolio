@@ -6,7 +6,7 @@ interface Data {
 }
 
 const data: Data[] = [
-	{ skill: "HRML+CSS", emoji: "✅", color: "blue", level: "beginner" },
+	{ skill: "HTML+CSS", emoji: "✅", color: "blue", level: "beginner" },
 
 	{
 		skill: "JavaScript",

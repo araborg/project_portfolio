@@ -4,7 +4,6 @@ interface SkillProps {
 	color: string;
 }
 
-// function Skill({ skill, emoji, color }: SkillProps) {
 function Skill({ skill, emoji, color }: SkillProps) {
 	return (
 		<div className="skill" style={{ backgroundColor: color }}>

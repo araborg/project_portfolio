@@ -6,17 +6,17 @@ import SkillList from "./SkillList";
 
 function App() {
 	return (
-		<div className="card-container">
-			<div className="card">
-				<Avatar />
+		// <div className="card-container">
+		<div className="card">
+			<Avatar />
 
-				<main>
-					<Intro />
+			<main className="main">
+				<Intro />
 
-					<SkillList />
-				</main>
-			</div>
+				<SkillList />
+			</main>
 		</div>
+		// </div>
 	);
 }
 

@@ -5,3 +5,19 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.card-container {
+	margin: 0 auto;
+	max-width: 300px;
+
+	border: 1px solid black;
+}
+
+.card {
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: space-between; */
+	/* width: 100%; */
+	/* border-radius: 15px; */
+	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); */
+}

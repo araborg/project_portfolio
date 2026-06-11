@@ -4,7 +4,7 @@ interface Question {
 	answer: string;
 }
 
-export const questions: Question[] = [
+const questions: Question[] = [
 	{
 		id: 3457,
 		question: "What language is React based on?",
@@ -43,3 +43,5 @@ export const questions: Question[] = [
 		answer: "Controlled element",
 	},
 ];
+
+export default questions;

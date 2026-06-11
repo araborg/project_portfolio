@@ -1,9 +1,9 @@
 import data from "./data";
 
-function Flashcard() {
+export function Flashcard() {
 	return data.map((item) => {
 		console.log(item);
 	});
 }
 
-export default Flashcard;
+// export default Flashcard;

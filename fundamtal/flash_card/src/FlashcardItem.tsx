@@ -15,7 +15,7 @@ function FlashcardItem({
 }: FlashcardItem) {
 	return (
 		<div
-			className={selectId === id ? "selected" : "card"}
+			className={selectId === id ? "selected" : ""}
 			onClick={() => handleClick(id)}
 		>
 			<p>{selectId === id ? answer : question}</p>

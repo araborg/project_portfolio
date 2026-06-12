@@ -14,7 +14,7 @@ function FlashcardItem({
 	handleClick,
 }: FlashcardItem) {
 	return (
-		<div className="card">
+		<div className="card" onClick={() => handleClick(id)}>
 			<p>{id} </p>
 			<p>{question}</p>
 			<p>{answer}</p>

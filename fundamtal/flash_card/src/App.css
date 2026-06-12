@@ -13,7 +13,7 @@
 	border: 2px solid red;
 }
 
-.card {
+.container div {
 	border: 2px solid green;
 	width: 200px;
 	height: 200px;
@@ -21,4 +21,9 @@
 	padding: 10px;
 
 	cursor: pointer;
+}
+
+.selected {
+	background-color: red;
+	color: white;
 }

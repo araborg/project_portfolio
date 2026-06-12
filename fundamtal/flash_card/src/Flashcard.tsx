@@ -7,10 +7,9 @@ function Flashcard() {
 	const [selectId, setSelectId] = useState<number | null>(null);
 
 	function handleClick(id: number | null) {
+		setSelectId(selectId !== id ? id : null);
+
 		console.log(id);
-
-		setSelectId(id !== selectId ? id : null);
-
 		console.log(selectId);
 	}
 

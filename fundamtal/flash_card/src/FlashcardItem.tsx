@@ -11,7 +11,6 @@ function FlashcardItem({ id, question, answer }: FlashcardItemProps) {
 
 	return (
 		<div className="card" onClick={handleClick}>
-			<p>{id}</p>
 			<p>{question}</p>
 			<p>{answer}</p>
 		</div>

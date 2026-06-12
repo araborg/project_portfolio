@@ -16,14 +16,17 @@ function FlashcardItem({
 	function handleClick(item: number) {
 		console.log(item);
 
-		// return item ? setSelectId(item) : null;
+		return item === selectId ? null : setSelectId(item);
 	}
+
+	// console.log(selectId);
+	// console.log(id);
 
 	return (
 		<div className="card" onClick={() => handleClick(id)}>
-			{/* <p>{selectId === id ? answer : question}</p> */}
-			<p>{question}</p>
-			<p>{answer}</p>
+			<p>{selectId === id ? answer : question}</p>
+			{/* <p>{question}</p> */}
+			{/* <p>{answer}</p> */}
 		</div>
 	);
 }

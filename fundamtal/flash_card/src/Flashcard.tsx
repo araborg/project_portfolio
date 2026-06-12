@@ -6,10 +6,10 @@ import FlashcardItem from "./FlashcardItem";
 function Flashcard() {
 	const [selectId, setSelectId] = useState<number | null>(null);
 
-	function handleClick(id) {
+	function handleClick(id: number | any) {
 		console.log(id);
 
-		setSelectId(selectId !== id ? id : "");
+		setSelectId(id !== selectId ? id : "");
 	}
 
 	return data.map(({ id, question, answer }) => (

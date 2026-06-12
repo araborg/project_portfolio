@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 interface FlashcardItemProps {
 	id: number;
 	question: string;
@@ -5,6 +7,8 @@ interface FlashcardItemProps {
 }
 
 function FlashcardItem({ id, question, answer }: FlashcardItemProps) {
+	const [selectId, setSelectId] = useState(null);
+
 	function handleClick() {
 		console.log(id);
 	}

@@ -6,9 +6,7 @@ function App() {
 		<>
 			<p>Welcome</p>
 
-			{/* <Flashcard /> */}
-
-			{/* <Flashcard /> */}
+			<Flashcard />
 		</>
 	);
 }

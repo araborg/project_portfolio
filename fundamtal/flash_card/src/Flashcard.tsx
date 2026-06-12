@@ -6,7 +6,9 @@ import FlashcardItem from "./FlashcardItem.tsx";
 function Flashcard() {
 	const [selectId, setSelectId] = useState<number | null>(null);
 
-	function handleClick() {}
+	function handleClick(id: number) {
+		setSelectId(selectId !== id ? id : null);
+	}
 
 	return data.map(({ id, question, answer }) => (
 		<ul key={id} className="cards">

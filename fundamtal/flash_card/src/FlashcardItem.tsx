@@ -2,9 +2,17 @@ interface FlashcardItem {
 	id: number;
 	question: string;
 	answer: string;
+	selectId: number | null;
+	handleClick: (id: number) => void;
 }
 
-function FlashcardItem({ id, question, answer }: FlashcardItem) {
+function FlashcardItem({
+	id,
+	question,
+	answer,
+	selectId,
+	handleClick,
+}: FlashcardItem) {
 	return (
 		<div className="card">
 			<p>{id} </p>

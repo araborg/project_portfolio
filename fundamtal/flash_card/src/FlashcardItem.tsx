@@ -1,23 +1,29 @@
-import { useState } from "react";
-
 interface FlashcardItemProps {
 	id: number;
 	question: string;
 	answer: string;
+	selectId: number | null;
+	setSelectId: (id: number | null) => void;
 }
 
-function FlashcardItem({ id, question, answer }: FlashcardItemProps) {
-	const [selectId, setSelectId] = useState(null);
+function FlashcardItem({
+	id,
+	question,
+	answer,
+	selectId,
+	setSelectId,
+}: FlashcardItemProps) {
+	function handleClick(item: number) {
+		console.log(item);
 
-	// function handleClick(item: number) {
-	// 	console.log(item);
-	// }
+		// return item ? setSelectId(item) : null;
+	}
 
 	return (
-		<div className="card" onClick={() => setSelectId(id)}>
+		<div className="card" onClick={() => handleClick(id)}>
+			{/* <p>{selectId === id ? answer : question}</p> */}
 			<p>{question}</p>
-
-			<p>{selectId === id ? answer : question}</p>
+			<p>{answer}</p>
 		</div>
 	);
 }

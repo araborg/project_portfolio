@@ -9,12 +9,12 @@ interface FlashcardItemProps {
 function FlashcardItem({ id, question, answer }: FlashcardItemProps) {
 	const [selectId, setSelectId] = useState(null);
 
-	function handleClick() {
-		console.log(id);
+	function handleClick(item: number) {
+		console.log(item);
 	}
 
 	return (
-		<div className="card" onClick={handleClick}>
+		<div className="card" onClick={() => handleClick(id)}>
 			<p>{question}</p>
 			<p>{answer}</p>
 		</div>

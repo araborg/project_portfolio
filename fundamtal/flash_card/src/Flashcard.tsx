@@ -8,9 +8,6 @@ function Flashcard() {
 
 	function handleClick(id: number | null) {
 		setSelectId(selectId !== id ? id : null);
-
-		console.log(id);
-		console.log(selectId);
 	}
 
 	return data.map(({ id, question, answer }) => (

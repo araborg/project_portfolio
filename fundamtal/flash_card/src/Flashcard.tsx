@@ -6,6 +6,12 @@ import FlashcardItem from "./FlashcardItem";
 function Flashcard() {
 	const [selectId, setSelectId] = useState<number | null>(null);
 
+	function handleClick(id) {
+		console.log(id);
+
+		setSelectId(selectId !== id ? id : "");
+	}
+
 	return data.map(({ id, question, answer }) => (
 		<ul key={id}>
 			<FlashcardItem
@@ -13,7 +19,7 @@ function Flashcard() {
 				question={question}
 				answer={answer}
 				selectId={selectId}
-				setSelectId={setSelectId}
+				handleClick={handleClick}
 			/>
 		</ul>
 	));

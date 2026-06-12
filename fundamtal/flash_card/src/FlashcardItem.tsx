@@ -3,7 +3,7 @@ interface FlashcardItemProps {
 	question: string;
 	answer: string;
 	selectId: number | null;
-	setSelectId: (id: number | null) => void;
+	handleClick: (id: number | null) => void;
 }
 
 function FlashcardItem({
@@ -11,14 +11,8 @@ function FlashcardItem({
 	question,
 	answer,
 	selectId,
-	setSelectId,
+	handleClick,
 }: FlashcardItemProps) {
-	function handleClick(item: number) {
-		console.log(item);
-
-		return item === selectId ? null : setSelectId(item);
-	}
-
 	// console.log(selectId);
 	// console.log(id);
 

@@ -3,7 +3,7 @@ interface FlashcardItemProps {
 	question: string;
 	answer: string;
 	selectId: number | null;
-	handleClick: (id: number | null) => void;
+	handleClick: (id: number) => void;
 }
 
 function FlashcardItem({

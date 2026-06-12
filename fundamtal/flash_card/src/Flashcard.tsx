@@ -6,10 +6,10 @@ import FlashcardItem from "./FlashcardItem";
 function Flashcard() {
 	const [selectId, setSelectId] = useState<number | null>(null);
 
-	function handleClick(id: number | any) {
+	function handleClick(id: number | null) {
 		console.log(id);
 
-		setSelectId(id !== selectId ? id : "");
+		setSelectId(id !== selectId ? id : null);
 
 		console.log(selectId);
 	}

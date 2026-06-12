@@ -4,6 +4,13 @@ interface FlashcardItem {
 	answer: string;
 }
 
-function FlashcardItem({ id, question, answer }: FlashcardItem) {}
+function FlashcardItem({ id, question, answer }: FlashcardItem) {
+	return (
+		<div>
+			<p>{question}</p>
+			<p>{answer}</p>
+		</div>
+	);
+}
 
 export default FlashcardItem;

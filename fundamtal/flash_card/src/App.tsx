@@ -1,13 +1,11 @@
 import "./App.css";
-import { Flashcard } from "./Flashcard";
+import Flashcard from "./Flashcard";
 
 function App() {
 	return (
-		<>
-			<p>Welcome</p>
-
+		<div className="container">
 			<Flashcard />
-		</>
+		</div>
 	);
 }
 

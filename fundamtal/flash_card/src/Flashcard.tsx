@@ -1,16 +1,17 @@
 import data from "./data";
-import { FlashcardItem } from "./FlashcardItem";
+import FlashcardItem from "./FlashcardItem";
 
-export function Flashcard() {
+function Flashcard() {
 	return data.map(({ id, question, answer }) => (
-		<FlashcardItem
-			key={id}
-			id={id}
-			question={question}
-			answer={answer}
-			//
-		/>
+		<ul key={id}>
+			<FlashcardItem
+				id={id}
+				question={question}
+				answer={answer}
+				//
+			/>
+		</ul>
 	));
 }
 
-// export default Flashcard;
+export default Flashcard;

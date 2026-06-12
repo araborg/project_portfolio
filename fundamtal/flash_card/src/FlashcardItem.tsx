@@ -4,7 +4,7 @@ interface FlashcardItemProps {
 	answer: string;
 }
 
-export function FlashcardItem({ id, question, answer }: FlashcardItemProps) {
+function FlashcardItem({ id, question, answer }: FlashcardItemProps) {
 	function handleClick() {
 		console.log(id);
 	}
@@ -18,4 +18,4 @@ export function FlashcardItem({ id, question, answer }: FlashcardItemProps) {
 	);
 }
 
-// export default Flashcard;
+export default FlashcardItem;

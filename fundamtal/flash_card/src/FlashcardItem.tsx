@@ -15,7 +15,7 @@ function FlashcardItem({
 }: FlashcardItem) {
 	return (
 		<div className="card" onClick={() => handleClick(id)}>
-			<p>{question}</p>
+			<p>{selectId === id ? answer : question}</p>
 		</div>
 	);
 }

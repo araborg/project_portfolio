@@ -5,8 +5,12 @@ interface FlashcardItemProps {
 }
 
 export function FlashcardItem({ id, question, answer }: FlashcardItemProps) {
+	function handleClick() {
+		console.log(id);
+	}
+
 	return (
-		<div className="card">
+		<div className="card" onClick={handleClick}>
 			<p>{id}</p>
 			<p>{question}</p>
 			<p>{answer}</p>

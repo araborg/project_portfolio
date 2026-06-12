@@ -3,7 +3,13 @@ import { FlashcardItem } from "./FlashcardItem";
 
 export function Flashcard() {
 	return data.map(({ id, question, answer }) => (
-		<FlashcardItem key={id} id={id} question={question} answer={answer} />
+		<FlashcardItem
+			key={id}
+			id={id}
+			question={question}
+			answer={answer}
+			//
+		/>
 	));
 }
 

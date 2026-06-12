@@ -21,12 +21,23 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-	height: 200px;
-	cursor: pointer;
 }
 
-.cards .card {
+.cards div {
+	cursor: pointer;
 	padding: 10px;
 	text-align: center;
+
+	height: 200px;
+	width: 200px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 2px solid green;
+}
+
+.selected {
+	background-color: red;
 }

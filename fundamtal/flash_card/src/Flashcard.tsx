@@ -6,7 +6,7 @@ import FlashcardItem from "./FlashcardItem.tsx";
 function Flashcard() {
 	const [selectId, setSelectId] = useState<number | null>(null);
 
-	function handleClick(id: number) {
+	function handleClick(id: number | null) {
 		setSelectId(selectId !== id ? id : null);
 	}
 

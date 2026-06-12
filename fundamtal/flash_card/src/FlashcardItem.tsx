@@ -9,14 +9,15 @@ interface FlashcardItemProps {
 function FlashcardItem({ id, question, answer }: FlashcardItemProps) {
 	const [selectId, setSelectId] = useState(null);
 
-	function handleClick(item: number) {
-		console.log(item);
-	}
+	// function handleClick(item: number) {
+	// 	console.log(item);
+	// }
 
 	return (
-		<div className="card" onClick={() => handleClick(id)}>
+		<div className="card" onClick={() => setSelectId(id)}>
 			<p>{question}</p>
-			<p>{answer}</p>
+
+			<p>{selectId === id ? answer : question}</p>
 		</div>
 	);
 }

@@ -13,14 +13,9 @@ function FlashcardItem({
 	selectId,
 	handleClick,
 }: FlashcardItemProps) {
-	// console.log(selectId);
-	// console.log(id);
-
 	return (
 		<div className="card" onClick={() => handleClick(id)}>
 			<p>{selectId === id ? answer : question}</p>
-			{/* <p>{question}</p> */}
-			{/* <p>{answer}</p> */}
 		</div>
 	);
 }

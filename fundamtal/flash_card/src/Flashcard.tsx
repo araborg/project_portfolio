@@ -10,6 +10,8 @@ function Flashcard() {
 		console.log(id);
 
 		setSelectId(id !== selectId ? id : "");
+
+		console.log(selectId);
 	}
 
 	return data.map(({ id, question, answer }) => (

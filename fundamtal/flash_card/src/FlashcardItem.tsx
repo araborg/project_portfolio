@@ -6,7 +6,7 @@ interface FlashcardItem {
 
 function FlashcardItem({ id, question, answer }: FlashcardItem) {
 	return (
-		<div>
+		<div className="card">
 			<p>{id} </p>
 			<p>{question}</p>
 			<p>{answer}</p>

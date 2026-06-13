@@ -34,6 +34,12 @@ function App() {
 					+
 				</button>
 			</div>
+
+			<div>
+				<p>70 days from today is Mon Aug 30 2027</p>
+			</div>
+
+			<button>Reset</button>
 		</>
 	);
 }

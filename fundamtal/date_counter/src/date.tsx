@@ -6,7 +6,9 @@ export function date(days: number): string {
 	futureDate.setDate(futureDate.getDate() + days);
 
 	const returnDay =
-		days === 0 ? "Today is" : `${days > 1 ? "days" : "day"}  from today is`;
+		days === 0
+			? "Today is"
+			: `${days} ${days > 1 ? "days" : "day"}  from today is`;
 
 	return `${returnDay} ${futureDate.toDateString()}`;
 }

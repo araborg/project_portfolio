@@ -42,7 +42,7 @@ function App() {
 				<p>{date(nums)}</p>
 			</div>
 
-			<button>Reset</button>
+			<button onClick={() => setNums(0)}>Reset</button>
 		</>
 	);
 }

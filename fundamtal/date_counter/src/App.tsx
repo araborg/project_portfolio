@@ -1,6 +1,8 @@
 import { useState } from "react";
-import "./App.css";
+
 import { date } from "./date";
+
+import "./App.css";
 
 function App() {
 	const [step, setStep] = useState<number>(1);

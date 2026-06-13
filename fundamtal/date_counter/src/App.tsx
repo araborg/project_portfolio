@@ -2,8 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import { date } from "./date";
 
-// let val = 0;
-
 function App() {
 	const [step, setStep] = useState<number>(1);
 	const [nums, setNums] = useState<number>(0);
@@ -16,7 +14,6 @@ function App() {
 					min="0"
 					max="10"
 					value={step}
-					// onChange={(e) => setStep(Number(e.target.value) + 1)}
 					onChange={(e) => setStep(Number(e.target.value))}
 				/>
 
@@ -29,12 +26,9 @@ function App() {
 				</button>
 
 				<input
-					// type="number"
 					type="text"
 					value={nums}
 					onChange={(e) => setNums(Number(e.target.value))}
-					// onChange={handleNumberChange}
-					// onChange={setNums(Number(num))}
 				/>
 
 				<button value={nums} onClick={() => setNums(nums + step)}>

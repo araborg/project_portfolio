@@ -16,7 +16,7 @@ export function date(days: number): string {
 
 	// futureDate.toDateString();
 
-	// return futureDate.toDateString();
+	return `{days} futureDate.toDateString()`;
 }
 
 // console.log(date(10));

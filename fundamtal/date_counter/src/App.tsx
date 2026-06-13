@@ -26,7 +26,7 @@ function App() {
 
 				<input
 					type="number"
-					value={nums}
+					value={nums ? nums : 0}
 					onChange={(e) => setNums(Number(e.target.value))}
 				/>
 

@@ -11,12 +11,12 @@ export function date(days: number): string {
 	// futureDate.setDate(futureDate.getDate() + days);
 
 	// console.log(futureDate)
-	days === 0 ? "Today is" : `${days} days from today is}`;
+	const returnDay = days === 0 ? "Today is" : `${days} days from today is`;
 	// days === 0 ? "Today is" : `${days} days from today is}`;
 
 	// futureDate.toDateString();
 
-	return `{days} futureDate.toDateString()`;
+	return `${returnDay} ${futureDate.toDateString()}`;
 }
 
 // console.log(date(10));

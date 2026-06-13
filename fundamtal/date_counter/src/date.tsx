@@ -1,6 +1,8 @@
-export function date(days: number): number {
+export function date(days: number): string {
 	const today = new Date();
 	const futureDate = new Date(today);
+
+	futureDate.setDate(futureDate.getDate() + days);
 
 	console.log(futureDate);
 
@@ -8,7 +10,7 @@ export function date(days: number): number {
 
 	// console.log(futureDate)
 
-	return days;
+	return futureDate.toDateString();
 }
 
 // console.log(date(10));

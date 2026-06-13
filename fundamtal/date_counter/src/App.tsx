@@ -26,7 +26,7 @@ function App() {
 				</button>
 
 				<input
-					type="text"
+					type="text" // ds is impt
 					value={nums}
 					onChange={(e) => setNums(Number(e.target.value))}
 				/>
@@ -37,13 +37,7 @@ function App() {
 			</div>
 
 			<div>
-				{/* <p>{date(nums)} days from today is Mon Aug 30 2027</p> */}
-				<p>
-					{date(nums)}
-					{/* ? "Today is"
-						: `${nums} days from today is `}
-					{date(nums)} */}
-				</p>
+				<p>{date(nums)}</p>
 			</div>
 
 			<button>Reset</button>

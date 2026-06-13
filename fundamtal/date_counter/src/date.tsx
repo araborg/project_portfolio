@@ -4,13 +4,16 @@ export function date(days: number): string {
 
 	futureDate.setDate(futureDate.getDate() + days);
 
-	console.log(typeof new Date().getDate());
+	console.log(futureDate);
 
 	// futureDate.setDate(futureDate.getDate() + days);
 
 	// console.log(futureDate)
+	return days === 0
+		? "Today is"
+		: `${days} days from today is ${futureDate.toDateString()} `;
 
-	return futureDate.toDateString();
+	// return futureDate.toDateString();
 }
 
 // console.log(date(10));

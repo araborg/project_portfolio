@@ -40,8 +40,10 @@ function App() {
 			<div>
 				{/* <p>{date(nums)} days from today is Mon Aug 30 2027</p> */}
 				<p>
-					{date(nums) === String(new Date()) ? "Today" : nums} days
-					from today is {date(nums)}
+					{date(nums)}
+					{/* ? "Today is"
+						: `${nums} days from today is `}
+					{date(nums)} */}
 				</p>
 			</div>
 

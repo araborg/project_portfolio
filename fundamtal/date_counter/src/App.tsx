@@ -18,7 +18,19 @@ function App() {
 					onChange={(e) => setStep(Number(e.target.value))}
 				/>
 
-				<span>{step}</span>
+				<span>Step: {step}</span>
+			</div>
+
+			<div>
+				<button>-</button>
+
+				<input
+					type="number"
+					value={step}
+					onChange={(e) => setStep(Number(e.target.value))}
+				/>
+
+				<button>+</button>
 			</div>
 		</>
 	);

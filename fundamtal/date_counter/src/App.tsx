@@ -3,8 +3,7 @@ import "./App.css";
 
 function App() {
 	const [step, setStep] = useState<number>(1);
-
-	console.log;
+	const [nums, setNums] = useState<number>(0);
 
 	return (
 		<>
@@ -14,23 +13,26 @@ function App() {
 					min="0"
 					max="10"
 					value={step}
-					step="1"
-					onChange={(e) => setStep(Number(e.target.value))}
+					onChange={(e) => setStep(Number(e.target.value) + 1)}
 				/>
 
 				<span>Step: {step}</span>
 			</div>
 
 			<div>
-				<button>-</button>
+				<button value={nums} onClick={() => setNums(nums - step)}>
+					-
+				</button>
 
 				<input
 					type="number"
-					value={step}
-					onChange={(e) => setStep(Number(e.target.value))}
+					value={nums}
+					onChange={(e) => setNums(Number(e.target.value))}
 				/>
 
-				<button>+</button>
+				<button value={nums} onClick={() => setNums(nums + step)}>
+					+
+				</button>
 			</div>
 		</>
 	);

@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent } from "react";
+import { useState } from "react";
 import "./App.css";
 import { date } from "./date";
 
@@ -29,10 +29,11 @@ function App() {
 				</button>
 
 				<input
-					type="number"
+					// type="number"
+					type="text"
 					value={nums}
 					onChange={(e) => setNums(Number(e.target.value))}
-					// onChange={(e) => handleInput(e)}
+					// onChange={handleNumberChange}
 					// onChange={setNums(Number(num))}
 				/>
 

@@ -38,7 +38,11 @@ function App() {
 			</div>
 
 			<div>
-				<p>{date(nums)} days from today is Mon Aug 30 2027</p>
+				{/* <p>{date(nums)} days from today is Mon Aug 30 2027</p> */}
+				<p>
+					{date(nums) === String(new Date()) ? "Today" : nums} days
+					from today is {date(nums)}
+				</p>
 			</div>
 
 			<button>Reset</button>

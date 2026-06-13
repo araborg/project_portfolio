@@ -4,7 +4,7 @@ export function date(days: number): string {
 
 	futureDate.setDate(futureDate.getDate() + days);
 
-	console.log(futureDate);
+	console.log(typeof new Date().getDate());
 
 	// futureDate.setDate(futureDate.getDate() + days);
 

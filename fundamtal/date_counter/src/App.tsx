@@ -4,7 +4,7 @@ import { date } from "./date";
 
 function App() {
 	const [step, setStep] = useState<number>(1);
-	const [nums, setNums] = useState<number>(0);
+	const [nums, setNums] = useState<number>("");
 
 	return (
 		<>

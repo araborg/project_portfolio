@@ -42,7 +42,19 @@ function App() {
 				<p>{date(nums)}</p>
 			</div>
 
-			<button onClick={() => setNums(0)}>Reset</button>
+			{nums > 0 ? (
+				<button
+					onClick={() => {
+						setNums(0);
+
+						setStep(1);
+					}}
+				>
+					Reset
+				</button>
+			) : (
+				""
+			)}
 		</>
 	);
 }

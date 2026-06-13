@@ -9,5 +9,3 @@ export function date(days: number): string {
 
 	return `${returnDay} ${futureDate.toDateString()}`;
 }
-
-// console.log(date(10));

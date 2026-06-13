@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { date } from "./date";
 
 function App() {
 	const [step, setStep] = useState<number>(1);
@@ -13,7 +14,8 @@ function App() {
 					min="0"
 					max="10"
 					value={step}
-					onChange={(e) => setStep(Number(e.target.value) + 1)}
+					// onChange={(e) => setStep(Number(e.target.value) + 1)}
+					onChange={(e) => setStep(Number(e.target.value))}
 				/>
 
 				<span>Step: {step}</span>
@@ -36,7 +38,7 @@ function App() {
 			</div>
 
 			<div>
-				<p>70 days from today is Mon Aug 30 2027</p>
+				<p>{date(nums)} days from today is Mon Aug 30 2027</p>
 			</div>
 
 			<button>Reset</button>

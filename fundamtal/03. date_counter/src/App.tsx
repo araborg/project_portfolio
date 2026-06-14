@@ -5,9 +5,6 @@ import { date } from "./date";
 import "./App.css";
 
 function App() {
-	const [step, setStep] = useState<number>(1);
-	const [nums, setNums] = useState<number>(0);
-
 	return (
 		<>
 			<div>

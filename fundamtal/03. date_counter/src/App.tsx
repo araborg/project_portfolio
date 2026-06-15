@@ -34,7 +34,7 @@ function App() {
 				<Buttons text="+" fxn={increment} />
 			</div>
 
-			<p>{date} is Mon Jun 21 2027</p>
+			<p>{date(nums)}</p>
 		</>
 	);
 }

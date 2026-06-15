@@ -14,7 +14,7 @@ function App() {
 	const decrement = () => setNums((prev: number) => prev - range);
 
 	function increment() {
-		setNums((prev: number) => prev + range);
+		setNums((next: number) => next + range);
 	}
 
 	function reset() {

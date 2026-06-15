@@ -9,9 +9,9 @@ function Input({ type, value, fxn }: InputProps) {
 		<div>
 			<input
 				type={type}
-				value={value}
 				min="0"
 				max="10"
+				value={value}
 				onChange={(e) => fxn(Number(e.target.value))}
 			/>
 		</div>

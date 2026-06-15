@@ -44,9 +44,7 @@ function App() {
 
 			<p>{date(nums)}</p>
 
-			<div>
-				<Buttons text="Reset" fxn={reset} />
-			</div>
+			<div>{nums > 0 ? <Buttons text="Reset" fxn={reset} /> : ""}</div>
 		</>
 	);
 }

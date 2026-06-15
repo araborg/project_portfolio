@@ -6,7 +6,7 @@ function date(nums: number): string {
 		nums === 0
 			? "Today is "
 			: nums < 1
-				? `${nums} ${nums > 1 ? "days" : "day"} ago was`
+				? `${nums} ${nums === -1 ? "day" : "days"} ago was`
 				: `${nums} ${nums > 1 ? "days" : "day"} from today is`;
 
 	return `${newDate} ${currDate.toDateString()}`;

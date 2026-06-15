@@ -24,7 +24,7 @@ function App() {
 	}
 
 	return (
-		<>
+		<div className="container">
 			<div>
 				<Input type="range" value={range} fxn={setRange} />
 
@@ -42,7 +42,7 @@ function App() {
 			<p>{date(nums)}</p>
 
 			<div>{nums > 0 ? <Buttons text="Reset" fxn={reset} /> : ""}</div>
-		</>
+		</div>
 	);
 }
 

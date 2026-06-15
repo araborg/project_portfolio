@@ -26,6 +26,8 @@ function App() {
 
 				<Buttons text="+" fxn={increment} />
 			</div>
+
+			<p>Today is Mon Jun 21 2027</p>
 		</>
 	);
 }

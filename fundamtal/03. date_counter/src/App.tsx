@@ -18,6 +18,12 @@ function App() {
 		setNums((prev: number) => prev + range);
 	}
 
+	function reset() {
+		setNums(0);
+
+		setRange(1);
+	}
+
 	// console.log(nums);
 
 	return (
@@ -37,6 +43,10 @@ function App() {
 			</div>
 
 			<p>{date(nums)}</p>
+
+			<div>
+				<Buttons text="Reset" fxn={reset} />
+			</div>
 		</>
 	);
 }

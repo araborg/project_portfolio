@@ -1,4 +1,3 @@
-// 2027-06-21
 function date(nums: number): string {
 	const currDate = new Date("2027-06-21");
 	currDate.setDate(currDate.getDate() + nums);

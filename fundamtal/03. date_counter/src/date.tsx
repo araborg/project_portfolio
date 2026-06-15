@@ -1,5 +1,8 @@
 function date(nums: number): string {
 	const currDate = new Date("2027-06-21");
+
+	// d impt part here is .setDate() & .getDate().
+	// don't store d result in variable
 	currDate.setDate(currDate.getDate() + nums);
 
 	const newDate =

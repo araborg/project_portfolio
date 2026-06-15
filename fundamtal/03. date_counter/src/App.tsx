@@ -10,7 +10,6 @@ import "./App.css";
 function App() {
 	const [range, setRange] = useState<number>(1);
 	const [nums, setNums] = useState<number>(0);
-	// console.log(range);
 
 	const decrement = () => setNums((prev: number) => prev - range);
 
@@ -23,8 +22,6 @@ function App() {
 
 		setRange(1);
 	}
-
-	// console.log(nums);
 
 	return (
 		<>

@@ -1,7 +1,11 @@
 import { useState } from "react";
-import "./App.css";
+
 import Input from "./Input";
 import Buttons from "./Buttons";
+
+import date from "./date";
+
+import "./App.css";
 
 function App() {
 	const [range, setRange] = useState<number>(1);
@@ -30,7 +34,7 @@ function App() {
 				<Buttons text="+" fxn={increment} />
 			</div>
 
-			<p>Today is Mon Jun 21 2027</p>
+			<p>{date} is Mon Jun 21 2027</p>
 		</>
 	);
 }

@@ -7,7 +7,23 @@
 }
 
 .container {
-	border: 2px solid red;
 	width: 400px;
 	margin: 0 auto;
+}
+
+.container div {
+	display: flex;
+	justify-content: center;
+}
+
+p {
+	text-align: center;
+}
+
+input {
+	margin: 0 5px;
+}
+
+button {
+	padding: 10px;
 }

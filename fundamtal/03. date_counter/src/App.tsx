@@ -9,7 +9,10 @@ function App() {
 	// console.log(range);
 
 	const decrement = () => setNums((prev: number) => prev - range);
-	const increment = () => setNums((prev: number) => prev + range);
+
+	function increment() {
+		setNums((prev: number) => prev + range);
+	}
 
 	return (
 		<>

@@ -5,7 +5,7 @@ function date(nums: number): string {
 
 	const newDate = fetchDate === 0 ? "Today is " : "is Mon Jun 21 2027";
 
-	console.log(nums);
+	console.log(fetchDate);
 
 	return newDate.toString();
 }

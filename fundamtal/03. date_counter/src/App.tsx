@@ -18,6 +18,8 @@ function App() {
 		setNums((prev: number) => prev + range);
 	}
 
+	console.log(nums);
+
 	return (
 		<>
 			<div>

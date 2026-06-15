@@ -8,8 +8,8 @@ function App() {
 	const [nums, setNums] = useState<number>(0);
 	// console.log(range);
 
-	const decrement = () => setNums((prev: number) => prev - 1);
-	const increment = () => setNums((prev: number) => prev + 1);
+	const decrement = () => setNums((prev: number) => prev - range);
+	const increment = () => setNums((prev: number) => prev + range);
 
 	return (
 		<>

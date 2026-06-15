@@ -18,7 +18,7 @@ function App() {
 		setNums((prev: number) => prev + range);
 	}
 
-	console.log(nums);
+	// console.log(nums);
 
 	return (
 		<>

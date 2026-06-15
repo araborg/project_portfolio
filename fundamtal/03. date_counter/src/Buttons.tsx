@@ -4,7 +4,13 @@ interface ButtonsProps {
 }
 
 function Buttons({ text, fxn }: ButtonsProps) {
-	return <button onClick={fxn}>{text}</button>;
+	return (
+		//
+		<button onClick={fxn}>
+			{/*  */}
+			{text}
+		</button>
+	);
 }
 
 export default Buttons;

@@ -8,14 +8,19 @@ import { useState } from "react";
 interface FaQuestionsItemsProps {
 	title: string;
 	text: string;
+	index: number;
 }
 
-function FaQuestionsItem({ title, text }: FaQuestionsItemsProps) {
+function FaQuestionsItem({ title, text, index }: FaQuestionsItemsProps) {
 	const [open, setOpen] = useState<boolean>(false);
 
 	return (
 		<div>
-			<p>{title}</p>
+			<div>
+				<p>{index + 1}</p>
+
+				<p>{title}</p>
+			</div>
 
 			<p>{open ? text : ""}</p>
 		</div>

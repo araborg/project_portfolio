@@ -7,7 +7,7 @@ function FaQuestions() {
 		<div>
 			{faqs.map((faq, index) => (
 				<div key={index}>
-					<FaQuestionsItem {...faq} />
+					<FaQuestionsItem {...faq} index={index} />
 				</div>
 			))}
 		</div>

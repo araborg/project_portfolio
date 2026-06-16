@@ -20,6 +20,8 @@ function FaQuestionsItem({ title, text, index }: FaQuestionsItemsProps) {
 				<p>{index + 1}</p>
 
 				<p>{title}</p>
+
+				<p>+</p>
 			</div>
 
 			<p>{open ? text : ""}</p>

@@ -1,18 +1,18 @@
 type FaQuestionsItemsProps = {
-	question: string;
-	answer: string;
-	id: number;
+	title: string;
+	text: string;
+	// id: number;
 	// };
 	// id: number;
 };
 
-function FaQuestionsItem({ question, answer, id }: FaQuestionsItemsProps) {
+function FaQuestionsItem({ title, text }: FaQuestionsItemsProps) {
 	return (
 		//
 		<div>
-			<p>{question}</p>
-			<p>{answer}</p>
-			<p>{id}</p>
+			<p>{title}</p>
+			<p>{text}</p>
+			{/* <p>{id}</p> */}
 		</div>
 	);
 }

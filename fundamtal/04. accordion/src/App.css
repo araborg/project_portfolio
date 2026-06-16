@@ -37,7 +37,10 @@
 }
 
 .title {
-	justify-content: start;
+	/* justify-content: start; */
+
+	justify-items: start;
+
 	border: 1px solid blue;
 }
 

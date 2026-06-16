@@ -15,24 +15,19 @@ body {
 
 .background {
 	margin-top: 100px;
-	/* border: 1px solid yellow; */
 }
 
 .container {
-	/* margin-top: 60px; */
-	/* text-align: center; */
-
-	/* border: 1px solid red; */
 	width: 50vw;
-	/* margin: o auto; */
+	font-size: 1.2rem;
 }
 
 .question {
+	padding: 20px;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 	display: grid;
 	grid-template-columns: auto 1fr auto;
-	gap: 10px;
-	padding: 20px 10px;
+	gap: 1.2rem;
 	/* border: 1px solid green; */
 
 	/* justify-items: space-between; */

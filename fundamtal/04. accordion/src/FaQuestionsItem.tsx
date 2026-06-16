@@ -13,11 +13,12 @@ interface FaQuestionsItemsProps {
 
 function FaQuestionsItem({ title, text, index }: FaQuestionsItemsProps) {
 	const [open, setOpen] = useState<boolean>(false);
+	console.log(index);
 
 	return (
 		<div>
 			<div>
-				<p>{index + 1}</p>
+				<p>{index < 9 ? `0${index + 1}` : index + 1}</p>
 
 				<p>{title}</p>
 

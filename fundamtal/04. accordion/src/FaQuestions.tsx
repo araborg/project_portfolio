@@ -4,7 +4,7 @@ import { faqs } from "./faqs/faqs";
 
 function FaQuestions() {
 	return (
-		<div>
+		<div className="background">
 			{faqs.map((faq, index) => (
 				<div key={index}>
 					<FaQuestionsItem {...faq} index={index} />

@@ -16,6 +16,7 @@ function FaQuestionsItem({ title, text, index }: FaQuestionsItemsProps) {
 
 	return (
 		<div className="container">
+			{/* <div className="background"> */}
 			<div className="question">
 				<p className="index">
 					{index < 9 ? `0${index + 1}` : index + 1}
@@ -27,6 +28,7 @@ function FaQuestionsItem({ title, text, index }: FaQuestionsItemsProps) {
 			</div>
 
 			<p>{open ? text : ""}</p>
+			{/* </div> */}
 		</div>
 	);
 }

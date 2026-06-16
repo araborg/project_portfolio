@@ -1,9 +1,6 @@
 type FaQuestionsItemsProps = {
 	title: string;
 	text: string;
-	// id: number;
-	// };
-	// id: number;
 };
 
 function FaQuestionsItem({ title, text }: FaQuestionsItemsProps) {

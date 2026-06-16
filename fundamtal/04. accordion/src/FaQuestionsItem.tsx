@@ -10,9 +10,9 @@ function FaQuestionsItem({ question, answer, id }: FaQuestionsItemsProps) {
 	return (
 		//
 		<div>
-			<p>faq</p>
-			<p>2</p>
-			<p>3</p>
+			<p>{question}</p>
+			<p>{answer}</p>
+			<p>{id}</p>
 		</div>
 	);
 }

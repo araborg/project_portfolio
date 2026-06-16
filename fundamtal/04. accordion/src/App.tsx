@@ -1,16 +1,11 @@
-import "./App.css";
+import FaQuestions from "./FaQuestions";
 
-import { faqs } from "./faqs/faqs";
+import "./App.css";
 
 function App() {
 	return (
 		<>
-			{/*  */}
-			{/* faqs.map(faq=>(console.log(faq))) */}
-			{console.log(faqs)}
-			{/*  */}
-
-			{faqs.map((faq) => console.log(faq))}
+			<FaQuestions />
 		</>
 	);
 }

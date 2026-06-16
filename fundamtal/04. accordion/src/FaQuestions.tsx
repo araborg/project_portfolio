@@ -2,13 +2,13 @@ import FaQuestionsItem from "./FaQuestionsItem";
 
 import { faqs } from "./faqs/faqs";
 
-interface FaQuestionsProps {
-	faq: {
-		question: string;
-		answer: string;
-		id: number;
-	};
-}
+// interface FaQuestionsProps {
+// 	faq: {
+// 		question: string;
+// 		answer: string;
+// 		id: number;
+// 	};
+// }
 
 // function FaQuestions({ faq }: FaQuestionsProps) {
 function FaQuestions() {

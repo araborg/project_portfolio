@@ -1,9 +1,12 @@
-interface FaQuestionsItemsProps {
-	faq: string;
+type FaQuestionsItemsProps = {
+	question: string;
+	answer: string;
+	id: number;
+	// };
 	// id: number;
-}
+};
 
-function FaQuestionsItem({ faq }: FaQuestionsItemsProps) {
+function FaQuestionsItem({ question, answer, id }: FaQuestionsItemsProps) {
 	return (
 		//
 		<div>

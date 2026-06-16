@@ -17,7 +17,7 @@ function FaQuestionsItem({ title, text }: FaQuestionsItemsProps) {
 		<div>
 			<p>{title}</p>
 
-			<p>{open ? "" : text}</p>
+			<p>{open ? text : ""}</p>
 		</div>
 	);
 }

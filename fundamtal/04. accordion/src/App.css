@@ -5,7 +5,8 @@
 }
 
 body {
-	background-color: #cacaca;
+	background-color: #fafafa;
+	font-family: sans-serif;
 }
 
 .App {
@@ -19,7 +20,8 @@ body {
 
 .container {
 	width: 50vw;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
+	background-color: #fff;
 }
 
 .question {
@@ -28,26 +30,21 @@ body {
 	display: grid;
 	grid-template-columns: auto 1fr auto;
 	gap: 1.2rem;
-	/* border: 1px solid green; */
-
-	/* justify-items: space-between; */
-	/* align-items: center; */
-
 	margin: 10px;
+}
 
-	/* min-width: 500px; */
-	/* repeat(3, 1fr); */
-	/* padding: 10px; */
-	/* margin: 10px 0; */
-	/* flex-direction: column; */
+.index {
+	color: #ced4da;
 }
 
 .title {
-	/* justify-content: start; */
+	/* color: #0e3768; */
+	/* color: #ced4da; */
+	color: #333;
+}
 
-	justify-items: start;
-
-	/* border: 1px solid blue; */
+.sign {
+	color: #333;
 }
 
 /* border-top: 4px solid #fff; */
